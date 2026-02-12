@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Sun, Moon, X, Menu } from "lucide-react";
+import { Sun, Moon, X, Menu, Calendar } from "lucide-react";
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   const [activeSection, setActiveSection] = useState("home");
@@ -36,7 +36,6 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
   const handleNavClick = (itemName) => {
     setActiveSection(itemName.toLowerCase());
-    // ❗ Do NOT close mobile menu here
   };
 
   return (
@@ -90,17 +89,15 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         </div>
 
         {/* Right Buttons */}
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-3">
+          {/* Dark Mode */}
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={toggleDarkMode}
-            aria-label={
-              darkMode ? "Switch to light mode" : "Switch to dark mode"
-            }
             className={`p-2 rounded-full ${
               darkMode ? "bg-gray-700" : "bg-gray-200"
-            } transition-colors`}
+            }`}
           >
             {darkMode ? (
               <Sun className="w-5 h-5 text-yellow-300" />
@@ -109,17 +106,25 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             )}
           </motion.button>
 
-          <motion.a
-            href="#contact"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className={`hidden lg:block px-6 py-2 font-semibold rounded-full bg-gradient-to-r ${colors.button} text-white shadow-md hover:shadow-lg transition-shadow`}
+          {/* Schedule Button */}
+          <a
+            href="https://calendly.com/ankitayadav476076/30min"
+            target="_blank"
+            rel="noreferrer"
+            className="hidden lg:block"
           >
-            Hire Me
-          </motion.a>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className={`flex items-center gap-2 bg-gradient-to-r ${colors.button} text-white px-4 py-2 rounded-full text-sm font-semibold shadow-md`}
+            >
+              <Calendar className="w-4 h-4" />
+              Schedule
+            </motion.button>
+          </a>
 
           {/* Mobile Menu Button */}
-          <div className="flex lg:hidden items-center px-2">
+          <div className="flex lg:hidden items-center">
             <motion.button
               whileTap={{ scale: 0.9 }}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -128,17 +133,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               }`}
             >
               {isMenuOpen ? (
-                <X
-                  className={`w-5 h-5 ${
-                    darkMode ? "text-white" : "text-gray-700"
-                  }`}
-                />
+                <X className={`w-5 h-5 ${darkMode ? "text-white" : "text-gray-700"}`} />
               ) : (
-                <Menu
-                  className={`w-5 h-5 ${
-                    darkMode ? "text-white" : "text-gray-700"
-                  }`}
-                />
+                <Menu className={`w-5 h-5 ${darkMode ? "text-white" : "text-gray-700"}`} />
               )}
             </motion.button>
           </div>
@@ -161,7 +158,10 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 <a
                   key={item.name}
                   href={item.link}
-                  onClick={() => handleNavClick(item.name)}
+                  onClick={() => {
+                    handleNavClick(item.name);
+                    setIsMenuOpen(false);
+                  }}
                   className="block"
                 >
                   <motion.div whileHover={{ x: 5 }}>

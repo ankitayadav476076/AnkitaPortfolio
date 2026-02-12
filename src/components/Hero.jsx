@@ -96,24 +96,9 @@ const Hero = ({ darkMode }) => {
               </a>
 
               {/* Contact Me */}
-              <a href="#contact">
-                <button className={`inline-flex items-center ${theme.buttonSecondary} py-2 px-5 rounded-full text-sm font-semibold`}>
-                  <Mail className="w-4 h-4 mr-1" />
-                  Contact Me
-                </button>
-              </a>
+             
 
-              {/* Schedule Meeting */}
-              <a
-                href="https://calendly.com/ankitayadav476076/30min"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button className={`inline-flex items-center ${theme.buttonSecondary} py-2 px-5 rounded-full text-sm font-semibold`}>
-                  <Calendar className="w-4 h-4 mr-1" />
-                  Schedule
-                </button>
-              </a>
+             
 
             </div>
           </div>
