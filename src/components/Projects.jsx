@@ -14,28 +14,37 @@ const Projects = ({ darkMode }) => {
   title: 'Responsive E-Commerce Website',
   desc:  'A responsive e-commerce website with product listing and shopping cart UI.',
   image: ecommerce,
-  tags: ['HTML', 'CSS', 'JavaScript']
+  tags: ['HTML', 'CSS', 'JavaScript'],
+  github:"https://github.com/ankitayadav476076/ecommerce-website.git",
+  code:"ankitayadav-quizvercel.app"
 },
     {
       id: 2,
       title: 'Responsive Digital Agency Website',
       desc: 'A static and responsive digital agency website designed for all screen sizes.',
       image: digital,
-      tags: ['HTML', 'CSS', 'JavaScript','React.js','Bootstrap']
+      tags: ['HTML', 'CSS', 'JavaScript','React.js','Bootstrap'],
+      github:"https://github.com/ankitayadav476076/agency-ai.git",
+      code:"ankitayadav-quizvercel.app"
     },
     {
       id: 3,
       title: 'Real-Time Weather Forecast Application',
       desc: 'A responsive weather application that shows real-time weather information using API data.',
       image: weather,
-      tags: ['HTML', 'CSS', 'JavaScript', 'API','React.js']
+      tags: ['HTML', 'CSS', 'JavaScript', 'API','React.js'],
+      github:"https://github.com/ankitayadav476076/App.git",
+      code:"ankitayadav-quizvercel.app"
     },
     {
       id: 4,
       title: 'Interactive Quiz & Knowledge Testing Application',
       desc: 'An interactive quiz app with multiple questions, score tracking, and dynamic result display.',
       image: quiz,
-      tags: ['HTML', 'CSS', 'React.js']
+      tags: ['HTML', 'CSS', 'React.js'],
+      github:"https://github.com/ankitayadav476076/Quiz-App.git",
+      code:"ankitayadav-quizvercel.app"
+
     },
     
     {
@@ -43,7 +52,9 @@ const Projects = ({ darkMode }) => {
       title: 'AI Image Generator App',
       desc: 'An app that creates images using AI from text prompts quickly and easily.',
       image: generator,
-      tags: ['HTML', 'CSS', 'React.js','Tailwind.css']
+      tags: ['HTML', 'CSS', 'React.js','Tailwind.css'],
+      github:"https://github.com/ankitayadav476076/Texttoimagegenerator.git",
+      code:"ankitayadav-quizvercel.app"
     }
   ];
 
@@ -136,7 +147,9 @@ const Projects = ({ darkMode }) => {
 
                 <div className='flex gap-2'>
                   <a
-                    href="#"
+                    href={project.github}
+                     target="_blank"
+                    rel="noopener noreferrer"
                     className='flex items-center justify-center gap-1.5 px-3 py-2 text-sm rounded-lg border transition-all'
                     data-aos='zoom-in'
                     data-aos-delay='200'
@@ -151,7 +164,9 @@ const Projects = ({ darkMode }) => {
                   </a>
 
                   <a
-                    href="#"
+                    href={project.code}
+                     target="_blank"
+                    rel="noopener noreferrer"
                     className='flex items-center justify-center gap-1.5 px-3 py-2 text-white text-sm rounded-lg hover:shadow-lg hover:shadow-orange-500/25 transition-all'
                     data-aos='zoom-in'
                     data-aos-delay='300'
