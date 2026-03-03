@@ -25,7 +25,7 @@ const Projects = ({ darkMode }) => {
       image: digital,
       tags: ['HTML', 'CSS', 'JavaScript','React.js','Bootstrap'],
       github:"https://github.com/ankitayadav476076/agency-ai.git",
-      code:"https://ankitayadav-quizvercel.app"
+      code:"https://ankita-agency-ai.vercel.app"
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ const Projects = ({ darkMode }) => {
       image: weather,
       tags: ['HTML', 'CSS', 'JavaScript', 'API','React.js'],
       github:"https://github.com/ankitayadav476076/App.git",
-      code:"https://ankitayadav-quizvercel.app"
+      code:"https://ankita-weatherapp.vercel.app"
     },
     {
       id: 4,
@@ -54,7 +54,7 @@ const Projects = ({ darkMode }) => {
       image: generator,
       tags: ['HTML', 'CSS', 'React.js','Tailwind.css'],
       github:"https://github.com/ankitayadav476076/Texttoimagegenerator.git",
-      code:"https://ankitayadav-quizvercel.app"
+      code:"https://ankitayadav-testtoimagegenerator.vercel.app"
     }
   ];
 
