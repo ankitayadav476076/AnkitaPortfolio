@@ -1,35 +1,34 @@
 import React from 'react'
 import ecommerce from "../assets/ecommerce.png";
-import myntra from "../assets/myntra.png";
-import sports from "../assets/sports.png";
+import digital from "../assets/digital.png";
 import quiz from "../assets/quiz.png";
 import weather from "../assets/weather.png";
-import todo from "../assets/todo.png";
+import generator from "../assets/generator.png";
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
 const Projects = ({ darkMode }) => {
 
   const projects = [
     {
-      id: 1,
-      title: 'E-Commerce Web Application (Amazon UI Clone)',
-      desc: 'A responsive e-commerce frontend inspired by Amazon with product listings, navigation bar, and cart UI.',
-      image: ecommerce,
-      tags: ['HTML', 'CSS', 'JavaScript']
-    },
+  id: 1,
+  title: 'Responsive E-Commerce Website',
+  desc:  'A responsive e-commerce website with product listing and shopping cart UI.',
+  image: ecommerce,
+  tags: ['HTML', 'CSS', 'JavaScript']
+},
     {
       id: 2,
-      title: 'Fashion E-Commerce Frontend (Myntra UI Clone)',
-      desc: 'A fashion shopping website UI inspired by Myntra with modern layout and responsive design.',
-      image: myntra,
-      tags: ['HTML', 'CSS', 'JavaScript']
+      title: 'Responsive Digital Agency Website',
+      desc: 'A static and responsive digital agency website designed for all screen sizes.',
+      image: digital,
+      tags: ['HTML', 'CSS', 'JavaScript','React.js','Bootstrap']
     },
     {
       id: 3,
       title: 'Real-Time Weather Forecast Application',
-      desc: 'A modern weather application that fetches live data from an API and displays real-time temperature, humidity levels, and detailed weather conditions',
+      desc: 'A responsive weather application that shows real-time weather information using API data.',
       image: weather,
-      tags: ['HTML', 'CSS', 'JavaScript', 'API']
+      tags: ['HTML', 'CSS', 'JavaScript', 'API','React.js']
     },
     {
       id: 4,
@@ -38,19 +37,13 @@ const Projects = ({ darkMode }) => {
       image: quiz,
       tags: ['HTML', 'CSS', 'React.js']
     },
-    {
-      id: 5,
-      title: 'Sports Club Management System (Full-Stack Web Application)',
-      desc: 'A full-stack system to manage members, events, and activities of a sports club with admin features.',
-      image: sports,
-      tags: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL']
-    },
+    
     {
       id: 6,
-      title: 'Task Management & To-Do List Application',
-      desc: 'A task manager to add, delete, and track daily tasks with a clean and simple UI.',
-      image: todo,
-      tags: ['HTML', 'CSS', 'JavaScript']
+      title: 'AI Image Generator App',
+      desc: 'An app that creates images using AI from text prompts quickly and easily.',
+      image: generator,
+      tags: ['HTML', 'CSS', 'React.js','Tailwind.css']
     }
   ];
 

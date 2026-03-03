@@ -62,10 +62,9 @@ const About = ({ darkMode }) => {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id
-            voluptatem aliquid aperiam eos praesentium minima exercitationem
-            commodi, eaque aliquam fugiat blanditiis necessitatibus ab harum quo
-            ea impedit nisi at.
+            Hi, I am Ankita Yadav, a passionate Front-End Developer skilled in HTML, CSS, JavaScript, and modern frameworks
+            like React.js, Bootstrap, and Tailwind CSS. I enjoy building responsive and user-friendly web applications and 
+            continuously improving my development skills.
           </p>
          <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8">
   <div
