@@ -16,7 +16,7 @@ const Projects = ({ darkMode }) => {
   image: ecommerce,
   tags: ['HTML', 'CSS', 'JavaScript'],
   github:"https://github.com/ankitayadav476076/ecommerce-website.git",
-  code:"ankitayadav-quizvercel.app"
+  code:"https://ankitayadav-quizvercel.app"
 },
     {
       id: 2,
@@ -25,7 +25,7 @@ const Projects = ({ darkMode }) => {
       image: digital,
       tags: ['HTML', 'CSS', 'JavaScript','React.js','Bootstrap'],
       github:"https://github.com/ankitayadav476076/agency-ai.git",
-      code:"ankitayadav-quizvercel.app"
+      code:"https://ankitayadav-quizvercel.app"
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ const Projects = ({ darkMode }) => {
       image: weather,
       tags: ['HTML', 'CSS', 'JavaScript', 'API','React.js'],
       github:"https://github.com/ankitayadav476076/App.git",
-      code:"ankitayadav-quizvercel.app"
+      code:"https://ankitayadav-quizvercel.app"
     },
     {
       id: 4,
@@ -43,7 +43,7 @@ const Projects = ({ darkMode }) => {
       image: quiz,
       tags: ['HTML', 'CSS', 'React.js'],
       github:"https://github.com/ankitayadav476076/Quiz-App.git",
-      code:"ankitayadav-quizvercel.app"
+      code:"https://ankitayadav-quizvercel.app"
 
     },
     
@@ -54,7 +54,7 @@ const Projects = ({ darkMode }) => {
       image: generator,
       tags: ['HTML', 'CSS', 'React.js','Tailwind.css'],
       github:"https://github.com/ankitayadav476076/Texttoimagegenerator.git",
-      code:"ankitayadav-quizvercel.app"
+      code:"https://ankitayadav-quizvercel.app"
     }
   ];
 
