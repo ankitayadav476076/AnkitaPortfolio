@@ -16,7 +16,7 @@ const Projects = ({ darkMode }) => {
   image: ecommerce,
   tags: ['HTML', 'CSS', 'JavaScript'],
   github:"https://github.com/ankitayadav476076/ecommerce-website.git",
-  code:"https://ankitayadav-quizvercel.app"
+  code:"https://ankitayadav-quiz.vercel.app"
 },
     {
       id: 2,
