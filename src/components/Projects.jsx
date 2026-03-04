@@ -16,7 +16,7 @@ const Projects = ({ darkMode }) => {
   image: ecommerce,
   tags: ['HTML', 'CSS', 'JavaScript'],
   github:"https://github.com/ankitayadav476076/ecommerce-website.git",
-  code:"https://ankita-ecommerce-website.vercel.app/"
+  code:"https://ankita-ecommerce-website.vercel.app"
 },
     {
       id: 2,
@@ -33,7 +33,7 @@ const Projects = ({ darkMode }) => {
       desc: 'A responsive weather application that shows real-time weather information using API data.',
       image: weather,
       tags: ['HTML', 'CSS', 'JavaScript', 'API','React.js'],
-      github:"https://github.com/ankitayadav476076/App.git",
+      github:"https://github.com/ankitayadav476076/weatherApp.git",
       code:"https://anki-weather-app.vercel.app"
     },
     {
