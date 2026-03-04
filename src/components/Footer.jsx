@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaHeart, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaHeart, FaLinkedin } from 'react-icons/fa';
 
 const Footer = ({ darkMode }) => {
   const currentYear = new Date().getFullYear();
@@ -58,17 +58,7 @@ const Footer = ({ darkMode }) => {
               <FaLinkedin />
             </a>
 
-            <a
-              href="#"
-              aria-label="Twitter"
-              className="w-10 h-10 rounded-full flex items-center justify-center 
-              hover:scale-110 transition-all 
-              hover:bg-gradient-to-r hover:from-orange-500 hover:to-amber-500 
-              hover:text-white bg-[#374151] dark:bg-gray-200 
-              text-white dark:text-black"
-            >
-              <FaTwitter />
-            </a>
+           
           </div>
 
           {/* Right Section */}
