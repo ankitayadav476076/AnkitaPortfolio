@@ -34,7 +34,7 @@ const Projects = ({ darkMode }) => {
       image: weather,
       tags: ['HTML', 'CSS', 'JavaScript', 'API','React.js'],
       github:"https://github.com/ankitayadav476076/App.git",
-      code:"https://ankita-weatherapp.vercel.app"
+      code:"https://anki-weather-app.vercel.app"
     },
     {
       id: 4,

@@ -84,16 +84,17 @@ const Hero = ({ darkMode }) => {
             <div className="flex flex-row justify-center lg:justify-start gap-2 mt-4">
 
               {/* View CV */}
-              <a
-                href="https://drive.google.com/file/d/1rWMOHnUF92sS1o3rzalAD6fTqAVts6ik/preview"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button className="inline-flex items-center text-white bg-gradient-to-r from-orange-500 to-amber-500 py-2 px-5 rounded-full text-sm font-semibold">
-                  <DownloadIcon className="w-4 h-4 mr-1" />
-                  View CV
-                </button>
-              </a>
+             {/* View CV */}
+<a
+  href="https://drive.google.com/file/d/1eU0gwK00R-c-eMwbKYxdoAD1rGqsrXV9/preview"
+  target="_blank"
+  rel="noreferrer"
+>
+  <button className="inline-flex items-center text-white bg-gradient-to-r from-orange-500 to-amber-500 py-2 px-5 rounded-full text-sm font-semibold">
+    <DownloadIcon className="w-4 h-4 mr-1" />
+    View CV
+  </button>
+</a>
 
               {/* Contact Me */}
              
