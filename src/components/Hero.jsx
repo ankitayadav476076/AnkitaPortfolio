@@ -2,18 +2,17 @@ import React from "react";
 import instagram from "../assets/instagram.png";
 import git from "../assets/git.png";
 import facebook from "../assets/facebook.png";
-import twitter from "../assets/twitter.png";
 import hero2 from "../assets/hero2.png";
 import hii from "../assets/hii.png";
 import { DownloadIcon, Mail, Calendar } from "lucide-react";
 
 const Hero = ({ darkMode }) => {
-  const socialIcons = [
-    { icons: instagram, alt: "Instagram" },
-    { icons: facebook, alt: "facebook" },
-    { icons: git, alt: "git" },
-    { icons: twitter, alt: "twitter" },
-  ];
+ const socialIcons = [
+  { icons: facebook, alt: "facebook", link: "https://www.facebook.com/share/18VFqX8P4E/" },
+  { icons: instagram, alt: "instagram", link: "https://www.instagram.com/ankitayadav5412?igsh=MTN0ZzJlZ2YzZGg3" },
+  { icons: git, alt: "github", link: "https://github.com/ankitayadav476076" },
+];
+  
 
   const darkTheme = {
     textPrimary: "text-white",
@@ -34,14 +33,14 @@ const Hero = ({ darkMode }) => {
   const theme = darkMode ? darkTheme : lightTheme;
 
   return (
-    <div className="relative overflow-hidden min-h-screen flex flex-col">
+   <div className="relative overflow-hidden flex flex-col">
       <section
         id="home"
         data-aos="fade-up"
         data-aos-delay="250"
         className="body-font z-10"
       >
-        <div className="container mx-auto flex px-4 sm:px-8 lg:px-14 py-20 lg:py-14 flex-col lg:flex-row items-center justify-between lg:mt-14 mt-14">
+        <div className="container mx-auto flex px-4 sm:px-8 lg:px-14 py-10 flex-col lg:flex-row items-center justify-between mt-10">
           
           {/* LEFT SIDE */}
           <div className="lg:w-1/2 w-full flex flex-col items-center lg:items-start text-center lg:text-left mb-12 lg:mb-0">
@@ -50,7 +49,7 @@ const Hero = ({ darkMode }) => {
               {socialIcons.map((social, index) => (
                 <a
                   key={index}
-                  href="#"
+                  href={social.link}
                   target="_blank"
                   rel="noreferrer"
                   className="transform hover:scale-110 transition-transform duration-300"

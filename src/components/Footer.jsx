@@ -35,7 +35,7 @@ const Footer = ({ darkMode }) => {
           {/* Social Icons */}
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://github.com/ankitayadav476076"
               aria-label="GitHub"
               className="w-10 h-10 rounded-full flex items-center justify-center 
               hover:scale-110 transition-all 
@@ -47,7 +47,7 @@ const Footer = ({ darkMode }) => {
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/in"
               aria-label="LinkedIn"
               className="w-10 h-10 rounded-full flex items-center justify-center 
               hover:scale-110 transition-all 
